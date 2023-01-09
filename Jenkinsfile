@@ -1,17 +1,14 @@
 pipeline{
-    
-    agent any 
-    
-    stages {
-        
-        stage('Git Checkout'){
-            
+    agent any
+
+    stages{
+
+        stage('git checkout'){
+
             steps{
-                
-                script{
-                    
-                    git 'https://github.com/satish855/demo-app.git'
-                }
+                git 'https://github.com/satish855/demo-app.git'
             }
-        }       
+        }
+
+    }
 }
